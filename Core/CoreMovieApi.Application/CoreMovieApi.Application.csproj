@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\CoreMovieApi.Persistence\CoreMovieApi.Persistence.csproj" />
+    <ProjectReference Include="..\CoreMovieApi.Domain\CoreMovieApi.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
