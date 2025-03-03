@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Infrastructure\CoreMovieApi.Persistence\CoreMovieApi.Persistence.csproj" />
-    <ProjectReference Include="..\CoreMovieApi.Domain\CoreMovieApi.Domain.csproj" />
   </ItemGroup>
 
 </Project>
