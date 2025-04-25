@@ -1,6 +1,5 @@
 ﻿using CoreMovieApi.Application.Features.Mediator.Queries.CastQueries;
 using CoreMovieApi.Application.Features.Mediator.Results.CastResults;
-using CoreMovieApi.Domain.Entities;
 using CoreMovieApi.Persistence.Context;
 using MediatR;
 
