@@ -8,7 +8,7 @@ public class CreateCastCommandHandler(MovieContext context) : IRequestHandler<Cr
 {
     public async Task Handle(CreateCastCommand request, CancellationToken cancellationToken)
     {
-        context.Casts.Add(new Cast
+        await context.Casts.AddAsync(new Cast
         {
             ImageUrl = request.ImageUrl,
             Biography = request.Biography,
