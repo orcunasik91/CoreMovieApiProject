@@ -2,6 +2,7 @@
 using CoreMovieApi.Application.Features.CQRS.Handlers.MovieHandlers;
 using CoreMovieApi.Persistence;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace CoreMovieApi.Application;
 public static class DependencyInjection
@@ -23,6 +24,7 @@ public static class DependencyInjection
         services.AddScoped<GetMovieByIdQueryHandler>();
         services.AddScoped<GetMovieQueryHandler>();
         #endregion
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
         return services;
     }
 }
