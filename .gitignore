@@ -362,3 +362,6 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /CoreMovieApiProject.sln
+/Frontends/CoreMovieApi.WebUI/Properties/launchSettings.json
+/Frontends/CoreMovieApi.WebUI/appsettings.json
+/Frontends/CoreMovieApi.WebUI/appsettings.Development.json
