@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="tr" class="no-js">
+<!-- movielist07:38-->
+@await Component.InvokeAsync("MainLayoutHeadComponent")
+<body>
+    <!--preloading-->
+    @await Component.InvokeAsync("MainLayoutPreloaderComponent")
+    <!--end of preloading-->
+    <!--login form popup-->
+    @await Component.InvokeAsync("MainLayoutLoginModalComponent")
+    <!--end of login form popup-->
+    <!--signup form popup-->
+    @await Component.InvokeAsync("MainLayoutSignupModalComponent")
+    <!--end of signup form popup-->
+    <!-- BEGIN | Header -->
+    @await Component.InvokeAsync("MainLayoutNavbarComponent")
+    <!-- END | Header -->
+    @await Component.InvokeAsync("MainLayoutHeroComponent")
+    @RenderBody()
+    <!-- footer section-->
+    @await Component.InvokeAsync("MainLayoutFooterComponent")
+    <!-- end of footer section-->
+    @await Component.InvokeAsync("MainLayoutScriptsComponent")
+</body>
+</html>
